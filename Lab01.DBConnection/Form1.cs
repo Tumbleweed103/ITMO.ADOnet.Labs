@@ -16,12 +16,13 @@ namespace DBConnection
         public Form1()
         {
             InitializeComponent();
+            this.connection.StateChange += new StateChangeEventHandler(this.connection_StateChange);
         }
 
         SqlConnection connection = new SqlConnection();
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog = Northwind; Integrated Security = True";
 
-        private void ConnectMenuItem_Click(object sender, EventArgs e)
+        private void connectMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -43,7 +44,7 @@ namespace DBConnection
             }
         }
 
-        private void DisconnectMenuItem_Click(object sender, EventArgs e)
+        private void disconnectMenuItem_Click(object sender, EventArgs e)
         {
             if (connection.State == ConnectionState.Open)
             {
@@ -56,7 +57,7 @@ namespace DBConnection
             }
         }
 
-        private async void AsyncConnectMenuItem_Click(object sender, EventArgs e)
+        private async void asyncConnectMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -76,6 +77,13 @@ namespace DBConnection
             {
                 MessageBox.Show(Xcp.Message, "Unexpected exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void connection_StateChange(object sender, StateChangeEventArgs e)
+        {
+            connectMenuItem.Enabled = (e.CurrentState == ConnectionState.Closed);
+            asyncConnectMenuItem.Enabled = (e.CurrentState == ConnectionState.Closed);
+            disconnectMenuItem.Enabled = (e.CurrentState == ConnectionState.Open);
         }
     }
 }

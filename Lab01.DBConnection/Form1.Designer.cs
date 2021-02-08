@@ -30,10 +30,10 @@ namespace DBConnection
         private void InitializeComponent()
         {
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
-            this.ActionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ConnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DisconnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AsyncConnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disconnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asyncConnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,43 +41,43 @@ namespace DBConnection
             // 
             this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ActionsMenuItem});
+            this.actionsMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
             this.MenuStrip.Size = new System.Drawing.Size(302, 28);
             this.MenuStrip.TabIndex = 0;
             this.MenuStrip.Text = "Работа с базой данных";
             // 
-            // ActionsMenuItem
+            // actionsMenuItem
             // 
-            this.ActionsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ConnectMenuItem,
-            this.DisconnectMenuItem,
-            this.AsyncConnectMenuItem});
-            this.ActionsMenuItem.Name = "ActionsMenuItem";
-            this.ActionsMenuItem.Size = new System.Drawing.Size(105, 24);
-            this.ActionsMenuItem.Text = "Работа с БД";
+            this.actionsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connectMenuItem,
+            this.disconnectMenuItem,
+            this.asyncConnectMenuItem});
+            this.actionsMenuItem.Name = "actionsMenuItem";
+            this.actionsMenuItem.Size = new System.Drawing.Size(105, 24);
+            this.actionsMenuItem.Text = "Работа с БД";
             // 
-            // ConnectMenuItem
+            // connectMenuItem
             // 
-            this.ConnectMenuItem.Name = "ConnectMenuItem";
-            this.ConnectMenuItem.Size = new System.Drawing.Size(320, 26);
-            this.ConnectMenuItem.Text = "Подключиться к БД";
-            this.ConnectMenuItem.Click += new System.EventHandler(this.ConnectMenuItem_Click);
+            this.connectMenuItem.Name = "connectMenuItem";
+            this.connectMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.connectMenuItem.Text = "Подключиться к БД";
+            this.connectMenuItem.Click += new System.EventHandler(this.connectMenuItem_Click);
             // 
-            // DisconnectMenuItem
+            // disconnectMenuItem
             // 
-            this.DisconnectMenuItem.Name = "DisconnectMenuItem";
-            this.DisconnectMenuItem.Size = new System.Drawing.Size(320, 26);
-            this.DisconnectMenuItem.Text = "Отключиться от БД";
-            this.DisconnectMenuItem.Click += new System.EventHandler(this.DisconnectMenuItem_Click);
+            this.disconnectMenuItem.Name = "disconnectMenuItem";
+            this.disconnectMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.disconnectMenuItem.Text = "Отключиться от БД";
+            this.disconnectMenuItem.Click += new System.EventHandler(this.disconnectMenuItem_Click);
             // 
-            // AsyncConnectMenuItem
+            // asyncConnectMenuItem
             // 
-            this.AsyncConnectMenuItem.Name = "AsyncConnectMenuItem";
-            this.AsyncConnectMenuItem.Size = new System.Drawing.Size(320, 26);
-            this.AsyncConnectMenuItem.Text = "Асинхронное подключение к БД";
-            this.AsyncConnectMenuItem.Click += new System.EventHandler(this.AsyncConnectMenuItem_Click);
+            this.asyncConnectMenuItem.Name = "asyncConnectMenuItem";
+            this.asyncConnectMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.asyncConnectMenuItem.Text = "Асинхронное подключение к БД";
+            this.asyncConnectMenuItem.Click += new System.EventHandler(this.asyncConnectMenuItem_Click);
             // 
             // Form1
             // 
@@ -85,6 +85,7 @@ namespace DBConnection
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 218);
             this.Controls.Add(this.MenuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "Form1";
             this.Text = "Northwind DB";
@@ -98,10 +99,10 @@ namespace DBConnection
         #endregion
 
         private System.Windows.Forms.MenuStrip MenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem ActionsMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ConnectMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem DisconnectMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AsyncConnectMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actionsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem connectMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disconnectMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asyncConnectMenuItem;
     }
 }
 
