@@ -105,7 +105,7 @@ namespace DBConnection
             ConnectionStringSettingsCollection settings = ConfigurationManager.ConnectionStrings;
             if (settings != null)
             {
-                foreach (ConnectionStringSettings cs in settings)
+                foreach (ConnectionStringSettings cs in settings) 
                 {
                     string str = String.Format($"Name = {cs.Name}\nProviderName = {cs.ProviderName}" +
                         $"\nConnectionString = {cs.ConnectionString}");
