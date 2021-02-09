@@ -34,6 +34,7 @@ namespace DBConnection
             this.connectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disconnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asyncConnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectionListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@ namespace DBConnection
             this.actionsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectMenuItem,
             this.disconnectMenuItem,
-            this.asyncConnectMenuItem});
+            this.asyncConnectMenuItem,
+            this.connectionListMenuItem});
             this.actionsMenuItem.Name = "actionsMenuItem";
             this.actionsMenuItem.Size = new System.Drawing.Size(105, 24);
             this.actionsMenuItem.Text = "Работа с БД";
@@ -79,6 +81,13 @@ namespace DBConnection
             this.asyncConnectMenuItem.Text = "Асинхронное подключение к БД";
             this.asyncConnectMenuItem.Click += new System.EventHandler(this.asyncConnectMenuItem_Click);
             // 
+            // connectionListMenuItem
+            // 
+            this.connectionListMenuItem.Name = "connectionListMenuItem";
+            this.connectionListMenuItem.Size = new System.Drawing.Size(320, 26);
+            this.connectionListMenuItem.Text = "Список подключений";
+            this.connectionListMenuItem.Click += new System.EventHandler(this.connectionListMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -103,6 +112,7 @@ namespace DBConnection
         private System.Windows.Forms.ToolStripMenuItem connectMenuItem;
         private System.Windows.Forms.ToolStripMenuItem disconnectMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asyncConnectMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem connectionListMenuItem;
     }
 }
 

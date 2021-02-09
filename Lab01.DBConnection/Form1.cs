@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace DBConnection
 {
@@ -20,7 +21,20 @@ namespace DBConnection
         }
 
         SqlConnection connection = new SqlConnection();
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog = Northwind; Integrated Security = True";
+        //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog = Northwind; Integrated Security = True";
+
+        static string GetConnectionStringByName(string name)
+        {
+            string returnValue = null;
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings[name];
+            if (settings != null)
+            {
+                returnValue = settings.ConnectionString;
+            }
+            return returnValue;
+        }
+
+        string connectionString = GetConnectionStringByName("DBConnection.NorthwindConnectionString");
 
         private void connectMenuItem_Click(object sender, EventArgs e)
         {
@@ -84,6 +98,20 @@ namespace DBConnection
             connectMenuItem.Enabled = (e.CurrentState == ConnectionState.Closed);
             asyncConnectMenuItem.Enabled = (e.CurrentState == ConnectionState.Closed);
             disconnectMenuItem.Enabled = (e.CurrentState == ConnectionState.Open);
+        }
+
+        private void connectionListMenuItem_Click(object sender, EventArgs e)
+        {
+            ConnectionStringSettingsCollection settings = ConfigurationManager.ConnectionStrings;
+            if (settings != null)
+            {
+                foreach (ConnectionStringSettings cs in settings)
+                {
+                    string str = String.Format($"Name = {cs.Name}\nProviderName = {cs.ProviderName}" +
+                        $"\nConnectionString = {cs.ConnectionString}");
+                    MessageBox.Show(str, "Параметры подключений");
+                }
+            }
         }
     }
 }
