@@ -35,6 +35,8 @@ namespace DBConnection
             this.disconnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asyncConnectMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectionListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +47,7 @@ namespace DBConnection
             this.actionsMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(302, 28);
+            this.MenuStrip.Size = new System.Drawing.Size(274, 28);
             this.MenuStrip.TabIndex = 0;
             this.MenuStrip.Text = "Работа с базой данных";
             // 
@@ -88,11 +90,32 @@ namespace DBConnection
             this.connectionListMenuItem.Text = "Список подключений";
             this.connectionListMenuItem.Click += new System.EventHandler(this.connectionListMenuItem_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(15, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Сколько продуктов";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(302, 218);
+            this.ClientSize = new System.Drawing.Size(274, 171);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.MenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.MenuStrip;
@@ -113,6 +136,8 @@ namespace DBConnection
         private System.Windows.Forms.ToolStripMenuItem disconnectMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asyncConnectMenuItem;
         private System.Windows.Forms.ToolStripMenuItem connectionListMenuItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
