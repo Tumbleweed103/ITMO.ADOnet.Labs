@@ -79,7 +79,28 @@ namespace DBCommand
 
         private void procedureQueryButton_Click(object sender, EventArgs e)
         {
-
+            StringBuilder results = new StringBuilder();
+            using (sqlConnection)
+            {
+                try
+                {
+                    sqlConnection.Open();
+                    SqlDataReader reader = procedureSqlCommand.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            results.Append(reader[i] + "\t");
+                        }
+                        results.Append(Environment.NewLine);
+                    }
+                    ResultsTextBox.Text = results.ToString();
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
