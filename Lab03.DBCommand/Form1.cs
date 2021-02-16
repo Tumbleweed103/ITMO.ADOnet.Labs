@@ -18,7 +18,7 @@ namespace DBCommand
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void simpleQueryButton_Click(object sender, EventArgs e)
         {
             StringBuilder results = new StringBuilder();
             using (sqlConnection)
@@ -26,7 +26,7 @@ namespace DBCommand
                 try
                 {
                     sqlConnection.Open();
-                    SqlDataReader reader = sqlCommand.ExecuteReader();
+                    SqlDataReader reader = selectSqlCommand.ExecuteReader();
                     while (reader.Read())
                     {
                         for (int i = 0; i < reader.FieldCount; i++)
@@ -44,16 +44,16 @@ namespace DBCommand
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void multiQueryButton_Click(object sender, EventArgs e)
         {
             StringBuilder results = new StringBuilder();
             using (sqlConnection)
             {
-                sqlCommand.CommandText = "SELECT CustomerID, CompanyName FROM Customers; " + "SELECT ProductName, UnitPrice, QuantityPerUnit FROM Products";
+                selectSqlCommand.CommandText = "SELECT CustomerID, CompanyName FROM Customers; " + "SELECT ProductName, UnitPrice, QuantityPerUnit FROM Products";
                 try
                 {
                     sqlConnection.Open();
-                    SqlDataReader reader = sqlCommand.ExecuteReader();
+                    SqlDataReader reader = selectSqlCommand.ExecuteReader();
                     bool moreResults = false;
                     do
                     {
@@ -75,6 +75,11 @@ namespace DBCommand
                     MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void procedureQueryButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,10 +30,12 @@ namespace DBCommand
         private void InitializeComponent()
         {
             this.sqlConnection = new System.Data.SqlClient.SqlConnection();
-            this.sqlCommand = new System.Data.SqlClient.SqlCommand();
-            this.button1 = new System.Windows.Forms.Button();
+            this.selectSqlCommand = new System.Data.SqlClient.SqlCommand();
+            this.simpleQueryButton = new System.Windows.Forms.Button();
             this.ResultsTextBox = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.multiQueryButton = new System.Windows.Forms.Button();
+            this.procedureButton = new System.Windows.Forms.Button();
+            this.procedureSqlCommand = new System.Data.SqlClient.SqlCommand();
             this.SuspendLayout();
             // 
             // sqlConnection
@@ -42,20 +44,20 @@ namespace DBCommand
     "True";
             this.sqlConnection.FireInfoMessageEventOnUserErrors = false;
             // 
-            // sqlCommand
+            // selectSqlCommand
             // 
-            this.sqlCommand.CommandText = "SELECT CustomerID, CompanyName\r\nFROM     Customers";
-            this.sqlCommand.Connection = this.sqlConnection;
+            this.selectSqlCommand.CommandText = "SELECT CustomerID, CompanyName\r\nFROM     Customers";
+            this.selectSqlCommand.Connection = this.sqlConnection;
             // 
-            // button1
+            // simpleQueryButton
             // 
-            this.button1.Location = new System.Drawing.Point(53, 278);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Запрос данных";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.simpleQueryButton.Location = new System.Drawing.Point(12, 278);
+            this.simpleQueryButton.Name = "simpleQueryButton";
+            this.simpleQueryButton.Size = new System.Drawing.Size(124, 23);
+            this.simpleQueryButton.TabIndex = 0;
+            this.simpleQueryButton.Text = "Запрос данных";
+            this.simpleQueryButton.UseVisualStyleBackColor = true;
+            this.simpleQueryButton.Click += new System.EventHandler(this.simpleQueryButton_Click);
             // 
             // ResultsTextBox
             // 
@@ -66,24 +68,41 @@ namespace DBCommand
             this.ResultsTextBox.Size = new System.Drawing.Size(419, 251);
             this.ResultsTextBox.TabIndex = 1;
             // 
-            // button2
+            // multiQueryButton
             // 
-            this.button2.Location = new System.Drawing.Point(221, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Пакетный запрос";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.multiQueryButton.Location = new System.Drawing.Point(142, 278);
+            this.multiQueryButton.Name = "multiQueryButton";
+            this.multiQueryButton.Size = new System.Drawing.Size(142, 23);
+            this.multiQueryButton.TabIndex = 2;
+            this.multiQueryButton.Text = "Пакетный запрос";
+            this.multiQueryButton.UseVisualStyleBackColor = true;
+            this.multiQueryButton.Click += new System.EventHandler(this.multiQueryButton_Click);
+            // 
+            // procedureButton
+            // 
+            this.procedureButton.Location = new System.Drawing.Point(290, 278);
+            this.procedureButton.Name = "procedureButton";
+            this.procedureButton.Size = new System.Drawing.Size(141, 23);
+            this.procedureButton.TabIndex = 3;
+            this.procedureButton.Text = "Вызов процедуры";
+            this.procedureButton.UseVisualStyleBackColor = true;
+            this.procedureButton.Click += new System.EventHandler(this.procedureQueryButton_Click);
+            // 
+            // procedureSqlCommand
+            // 
+            this.procedureSqlCommand.CommandText = "Ten Most Expensive Products";
+            this.procedureSqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
+            this.procedureSqlCommand.Connection = this.sqlConnection;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 322);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.procedureButton);
+            this.Controls.Add(this.multiQueryButton);
             this.Controls.Add(this.ResultsTextBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.simpleQueryButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "DBCommand";
@@ -95,10 +114,12 @@ namespace DBCommand
         #endregion
 
         private System.Data.SqlClient.SqlConnection sqlConnection;
-        private System.Data.SqlClient.SqlCommand sqlCommand;
-        private System.Windows.Forms.Button button1;
+        private System.Data.SqlClient.SqlCommand selectSqlCommand;
+        private System.Windows.Forms.Button simpleQueryButton;
         private System.Windows.Forms.TextBox ResultsTextBox;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button multiQueryButton;
+        private System.Windows.Forms.Button procedureButton;
+        private System.Data.SqlClient.SqlCommand procedureSqlCommand;
     }
 }
 
