@@ -114,25 +114,99 @@ namespace DBConnection
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void scalarButton_Click(object sender, EventArgs e)
         {
-            if (connection.State == ConnectionState.Closed)
+            using (connection)
             {
-                MessageBox.Show("Сначала подключитесь к базе");
-                return;
-            }
+                if (connection.State == ConnectionState.Closed)
+                {
+                    MessageBox.Show("Сначала подключитесь к базе");
+                    return;
+                }
 
-            SqlCommand command = new SqlCommand();
-            command.Connection = connection;
-            command.CommandText = "SELECT COUNT(*) FROM Products";
+                SqlCommand command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = "SELECT COUNT(*) FROM Products";
+                try
+                {
+                    int count = (int)command.ExecuteScalar();
+                    scalarLabel.Text = count.ToString();
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void scalarMethodButton_Click(object sender, EventArgs e)
+        {
             try
             {
-                int count = (int)command.ExecuteScalar();
-                label1.Text = count.ToString();
+                int number = WorkWithDB.ExecuteScalarMethod(connectionString, "SELECT COUNT(*) FROM Products");
+                scalarMethodLabel.Text = number.ToString();
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void listViewButton_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandText = "SELECT ProductName, UnitPrice, QuantityPerUnit FROM Products";
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        ListViewItem newItem = listView.Items.Add(reader["ProductName"].ToString());
+                        newItem.SubItems.Add(reader.GetDecimal(1).ToString());
+                        newItem.SubItems.Add(reader["QuantityPerUnit"].ToString());
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void transactionButton_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlTransaction sqlTransaction = connection.BeginTransaction();
+                SqlCommand command = connection.CreateCommand();
+                command.Transaction = sqlTransaction;
+                try
+                {
+                    command.CommandText = "INSERT INTO PRODUCTS (ProductName, UnitPrice, QuantityPerUnit) VALUES('Wrong size', 12, '1 boxes')";
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = "INSERT INTO Products (ProductName, UnitPrice, QuantityPerUnit) VALUES('Wrong color', 25, '100 ml')"; 
+                    command.ExecuteNonQuery();
+
+                    sqlTransaction.Commit();
+                    MessageBox.Show("Строки записаны в базу данных");
+                }
+                catch (SqlException ex)
+                {
+                    try
+                    {
+                        sqlTransaction.Rollback();
+                    }
+                    catch (Exception exRollback)
+                    {
+                        MessageBox.Show(exRollback.Message);
+                    }
+                    MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
