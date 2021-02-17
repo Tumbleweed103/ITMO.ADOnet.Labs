@@ -154,7 +154,31 @@ namespace DBCommand
 
         private void ParameterProcedureButton_Click(object sender, EventArgs e)
         {
-
+            StringBuilder result = new StringBuilder();
+            try
+            {
+                parameterProcedureSqlCommand.Parameters["@CategoryName"].Value = CategoryNameTextBox.Text;
+                parameterProcedureSqlCommand.Parameters["@OrdYear"].Value = OrdYearTextBox.Text;
+                sqlConnection.Open();
+                SqlDataReader reader = parameterProcedureSqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        result.Append(reader[i] + "\t");
+                    }
+                    result.Append(Environment.NewLine);
+                }
+                ResultsTextBox.Text = result.ToString();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
         }
     }
 }

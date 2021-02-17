@@ -74,7 +74,7 @@ namespace DBCommand
             this.ResultsTextBox.Multiline = true;
             this.ResultsTextBox.Name = "ResultsTextBox";
             this.ResultsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.ResultsTextBox.Size = new System.Drawing.Size(509, 251);
+            this.ResultsTextBox.Size = new System.Drawing.Size(509, 257);
             this.ResultsTextBox.TabIndex = 1;
             // 
             // MultiQueryButton
@@ -182,7 +182,7 @@ namespace DBCommand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 272);
+            this.ClientSize = new System.Drawing.Size(721, 281);
             this.Controls.Add(this.OrdYearTextBox);
             this.Controls.Add(this.CategoryNameTextBox);
             this.Controls.Add(this.ParameterProcedureButton);
