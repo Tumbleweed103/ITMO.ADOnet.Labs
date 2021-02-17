@@ -18,7 +18,7 @@ namespace DBCommand
             InitializeComponent();
         }
 
-        private void simpleQueryButton_Click(object sender, EventArgs e)
+        private void SimpleQueryButton_Click(object sender, EventArgs e)
         {
             StringBuilder results = new StringBuilder();
             using (sqlConnection)
@@ -44,7 +44,7 @@ namespace DBCommand
             }
         }
 
-        private void multiQueryButton_Click(object sender, EventArgs e)
+        private void MultiQueryButton_Click(object sender, EventArgs e)
         {
             StringBuilder results = new StringBuilder();
             using (sqlConnection)
@@ -77,7 +77,7 @@ namespace DBCommand
             }
         }
 
-        private void procedureQueryButton_Click(object sender, EventArgs e)
+        private void ProcedureQueryButton_Click(object sender, EventArgs e)
         {
             StringBuilder results = new StringBuilder();
             using (sqlConnection)
@@ -101,6 +101,60 @@ namespace DBCommand
                     MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void CreateTableButton_Click(object sender, EventArgs e)
+        {
+            using (sqlConnection)
+            {
+                createSqlCommand.CommandText = "CREATE TABLE SalesPersons(" +
+                    "[SalesPersonID] [int] IDENTITY(1,1) NOT NULL, " +
+                    "[FirstName] [nvarchar](50)  NULL, " +
+                    "[LastName] [nvarchar](50)  NULL)";
+                try
+                {
+                    sqlConnection.Open();
+                    createSqlCommand.ExecuteNonQuery();
+                    MessageBox.Show("Таблица SalesPersons создана");
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void ParameterQueryButton_Click(object sender, EventArgs e)
+        {
+            StringBuilder results = new StringBuilder();
+            try
+            {
+                parameterSqlCommand.Parameters["@City"].Value = CityTextBox.Text;
+                sqlConnection.Open();
+                SqlDataReader reader = parameterSqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        results.Append(reader[i].ToString() + "\t");
+                    }
+                    results.Append(Environment.NewLine);
+                }
+                ResultsTextBox.Text = results.ToString();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+        private void ParameterProcedureButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
