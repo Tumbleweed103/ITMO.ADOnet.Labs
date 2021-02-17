@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab04.DatasetDesigner
+namespace Lab04_2CreatingDataTable
 {
     static class Program
     {

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab04.DatasetDesigner
+namespace Lab04_2CreatingDataTable
 {
-    public partial class DatasetDesigner : Form
+    public partial class Form1 : Form
     {
-        public DatasetDesigner()
+        public Form1()
         {
             InitializeComponent();
         }
