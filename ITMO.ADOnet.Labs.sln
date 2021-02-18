@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-3.DataAdapterProgram"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-4.DataAdapterWizard", "Lab04-4.DataAdapterWizard\Lab04-4.DataAdapterWizard.csproj", "{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-5.WorkingDataTable", "Lab04-5.WorkingDataTable\Lab04-5.WorkingDataTable.csproj", "{99D559E2-8C25-42E2-9200-D246A4C36DDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D559E2-8C25-42E2-9200-D246A4C36DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D559E2-8C25-42E2-9200-D246A4C36DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D559E2-8C25-42E2-9200-D246A4C36DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D559E2-8C25-42E2-9200-D246A4C36DDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{12D9EB1F-8558-4CC1-804E-8AF81BBA742D} = {B3B281ED-DBB1-4E7E-991E-752B8C2022A5}
 		{50DF7798-67FD-40D6-AB68-B29C6174927D} = {B3B281ED-DBB1-4E7E-991E-752B8C2022A5}
 		{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704} = {B3B281ED-DBB1-4E7E-991E-752B8C2022A5}
+		{99D559E2-8C25-42E2-9200-D246A4C36DDC} = {B3B281ED-DBB1-4E7E-991E-752B8C2022A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E3D96D4-25FD-4AFC-8AA4-FE05928F3BE7}
