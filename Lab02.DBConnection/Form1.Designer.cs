@@ -196,7 +196,6 @@ namespace DBConnection
             this.Controls.Add(this.scalarLabel);
             this.Controls.Add(this.scalarButton);
             this.Controls.Add(this.MenuStrip);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "Form1";
             this.Text = "Northwind DB";

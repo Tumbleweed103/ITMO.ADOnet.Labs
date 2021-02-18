@@ -59,7 +59,6 @@ namespace Lab04.DatasetDesigner
             this.ClientSize = new System.Drawing.Size(571, 316);
             this.Controls.Add(this.CustomersListBox);
             this.Controls.Add(this.GetCustomersButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "DatasetDesigner";
             this.ResumeLayout(false);

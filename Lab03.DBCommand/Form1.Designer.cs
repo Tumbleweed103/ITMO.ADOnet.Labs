@@ -193,7 +193,6 @@ namespace DBCommand
             this.Controls.Add(this.MultiQueryButton);
             this.Controls.Add(this.ResultsTextBox);
             this.Controls.Add(this.SimpleQueryButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "DBCommand";
             this.ResumeLayout(false);

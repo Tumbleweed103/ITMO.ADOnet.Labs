@@ -86,7 +86,6 @@ namespace Lab04_2CreatingDataTable
             this.Controls.Add(this.fillParentTableButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.fillChildTableButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "CreatingDataTable";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

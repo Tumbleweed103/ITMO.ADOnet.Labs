@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A51C547D-E288-4E75-B630-59B39A4EC413}</ProjectGuid>
+    <ProjectGuid>{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ITMO.ADOnet.Labs</RootNamespace>
-    <AssemblyName>ITMO.ADOnet.Labs</AssemblyName>
+    <RootNamespace>Lab04_4.DataAdapterWizard</RootNamespace>
+    <AssemblyName>Lab04-4.DataAdapterWizard</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
