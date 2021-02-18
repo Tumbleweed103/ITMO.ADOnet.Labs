@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03.DBCommand", "Lab03.DB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab04", "Lab04", "{B3B281ED-DBB1-4E7E-991E-752B8C2022A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-1.DatasetDesigner", "Lab04.DatasetDesigner\Lab04-1.DatasetDesigner.csproj", "{35A28FBB-635D-47D0-89A7-F42F78BB0C56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-1.DatasetDesigner", "Lab04-1.DatasetDesigner\Lab04-1.DatasetDesigner.csproj", "{35A28FBB-635D-47D0-89A7-F42F78BB0C56}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-2.CreatingDataTable", "Lab04-2CreatingDataTable\Lab04-2.CreatingDataTable.csproj", "{12D9EB1F-8558-4CC1-804E-8AF81BBA742D}"
 EndProject
