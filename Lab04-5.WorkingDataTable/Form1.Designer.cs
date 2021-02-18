@@ -44,6 +44,14 @@ namespace Lab04_5.WorkingDataTable
             this.UpdateValueButton = new System.Windows.Forms.Button();
             this.AcceptChangesButton = new System.Windows.Forms.Button();
             this.RejectChangesButton = new System.Windows.Forms.Button();
+            this.CellValueTextBox = new System.Windows.Forms.TextBox();
+            this.OriginalDRVTextBox = new System.Windows.Forms.TextBox();
+            this.CurrentDRVTextBox = new System.Windows.Forms.TextBox();
+            this.RowStateTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +65,7 @@ namespace Lab04_5.WorkingDataTable
             this.CustomersDataGridView.RowTemplate.Height = 24;
             this.CustomersDataGridView.Size = new System.Drawing.Size(775, 333);
             this.CustomersDataGridView.TabIndex = 0;
+            this.CustomersDataGridView.Click += new System.EventHandler(this.CustomersDataGridView_Click);
             // 
             // FillTableButton
             // 
@@ -212,6 +221,7 @@ namespace Lab04_5.WorkingDataTable
             this.UpdateValueButton.TabIndex = 4;
             this.UpdateValueButton.Text = "Update value";
             this.UpdateValueButton.UseVisualStyleBackColor = true;
+            this.UpdateValueButton.Click += new System.EventHandler(this.UpdateValueButton_Click);
             // 
             // AcceptChangesButton
             // 
@@ -221,6 +231,7 @@ namespace Lab04_5.WorkingDataTable
             this.AcceptChangesButton.TabIndex = 5;
             this.AcceptChangesButton.Text = "Accept changes";
             this.AcceptChangesButton.UseVisualStyleBackColor = true;
+            this.AcceptChangesButton.Click += new System.EventHandler(this.AcceptChangesButton_Click);
             // 
             // RejectChangesButton
             // 
@@ -230,12 +241,85 @@ namespace Lab04_5.WorkingDataTable
             this.RejectChangesButton.TabIndex = 6;
             this.RejectChangesButton.Text = "Reject changes";
             this.RejectChangesButton.UseVisualStyleBackColor = true;
+            this.RejectChangesButton.Click += new System.EventHandler(this.RejectChangesButton_Click);
+            // 
+            // CellValueTextBox
+            // 
+            this.CellValueTextBox.Location = new System.Drawing.Point(342, 362);
+            this.CellValueTextBox.Name = "CellValueTextBox";
+            this.CellValueTextBox.Size = new System.Drawing.Size(446, 22);
+            this.CellValueTextBox.TabIndex = 7;
+            // 
+            // OriginalDRVTextBox
+            // 
+            this.OriginalDRVTextBox.Location = new System.Drawing.Point(342, 390);
+            this.OriginalDRVTextBox.Name = "OriginalDRVTextBox";
+            this.OriginalDRVTextBox.Size = new System.Drawing.Size(446, 22);
+            this.OriginalDRVTextBox.TabIndex = 8;
+            // 
+            // CurrentDRVTextBox
+            // 
+            this.CurrentDRVTextBox.Location = new System.Drawing.Point(342, 421);
+            this.CurrentDRVTextBox.Name = "CurrentDRVTextBox";
+            this.CurrentDRVTextBox.Size = new System.Drawing.Size(446, 22);
+            this.CurrentDRVTextBox.TabIndex = 9;
+            // 
+            // RowStateTextBox
+            // 
+            this.RowStateTextBox.Location = new System.Drawing.Point(342, 448);
+            this.RowStateTextBox.Name = "RowStateTextBox";
+            this.RowStateTextBox.Size = new System.Drawing.Size(446, 22);
+            this.RowStateTextBox.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(263, 362);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Cell value:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(263, 391);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Original:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(263, 420);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Current:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(263, 448);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Row state:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 454);
+            this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.RowStateTextBox);
+            this.Controls.Add(this.CurrentDRVTextBox);
+            this.Controls.Add(this.OriginalDRVTextBox);
+            this.Controls.Add(this.CellValueTextBox);
             this.Controls.Add(this.RejectChangesButton);
             this.Controls.Add(this.AcceptChangesButton);
             this.Controls.Add(this.UpdateValueButton);
@@ -249,6 +333,7 @@ namespace Lab04_5.WorkingDataTable
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -268,6 +353,14 @@ namespace Lab04_5.WorkingDataTable
         private System.Windows.Forms.Button UpdateValueButton;
         private System.Windows.Forms.Button AcceptChangesButton;
         private System.Windows.Forms.Button RejectChangesButton;
+        private System.Windows.Forms.TextBox CellValueTextBox;
+        private System.Windows.Forms.TextBox OriginalDRVTextBox;
+        private System.Windows.Forms.TextBox CurrentDRVTextBox;
+        private System.Windows.Forms.TextBox RowStateTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
