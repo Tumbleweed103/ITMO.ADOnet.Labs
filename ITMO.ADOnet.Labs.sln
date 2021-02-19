@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab05", "Lab05", "{480A514F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-1.DataSourcesWizard", "Lab05-1.DataSourcesWizard\Lab05-1.DataSourcesWizard.csproj", "{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-2.DataBindingSimple", "Lab05-2.DataBindingSimple\Lab05-2.DataBindingSimple.csproj", "{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +100,7 @@ Global
 		{99D559E2-8C25-42E2-9200-D246A4C36DDC} = {B3B281ED-DBB1-4E7E-991E-752B8C2022A5}
 		{0427B360-1229-4E33-96FD-8D80EBBEFC59} = {B3B281ED-DBB1-4E7E-991E-752B8C2022A5}
 		{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8} = {480A514F-DB09-4EE2-90F4-434636D73481}
+		{D2CBA791-2E7B-42B3-9E8C-E688C1993C19} = {480A514F-DB09-4EE2-90F4-434636D73481}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E3D96D4-25FD-4AFC-8AA4-FE05928F3BE7}
