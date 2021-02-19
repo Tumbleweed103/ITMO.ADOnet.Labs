@@ -16,5 +16,38 @@ namespace Lab06_1.SavingDataSetXml
         {
             InitializeComponent();
         }
+
+        private void FillDataSetButton_Click(object sender, EventArgs e)
+        {
+            CustomersAdapter.Fill(northwindDataSet1.Customers);
+            OrdersAdapter.Fill(northwindDataSet1.Orders);
+            CustomersGrid.DataSource = northwindDataSet1.Customers;
+        }
+
+        private void SaveXmlDataButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                northwindDataSet1.WriteXml("Northwind.xml");
+                MessageBox.Show("Data saved as XML");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void SaveXmlSchemaButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                northwindDataSet1.WriteXmlSchema("Northwind.xsd");
+                MessageBox.Show("Schema saved as XML");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

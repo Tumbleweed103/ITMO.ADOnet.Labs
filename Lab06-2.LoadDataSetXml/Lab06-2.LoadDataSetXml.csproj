@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65684957-C341-4069-A6E9-EA232BFFDB59}</ProjectGuid>
+    <ProjectGuid>{681AE582-6C04-4141-8D25-88069C52E2CB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab06_1.SavingDataSetXml</RootNamespace>
-    <AssemblyName>Lab06-1.SavingDataSetXml</AssemblyName>
+    <RootNamespace>Lab06_2.LoadDataSetXml</RootNamespace>
+    <AssemblyName>Lab06-2.LoadDataSetXml</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,11 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="NorthwindDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -71,17 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="NorthwindDataSet.xsc">
-      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="NorthwindDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NorthwindDataSet.xss">
-      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
