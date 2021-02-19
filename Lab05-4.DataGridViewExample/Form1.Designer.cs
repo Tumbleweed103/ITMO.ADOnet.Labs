@@ -64,6 +64,7 @@ namespace Lab05_4.DataGridViewExample
             this.DeleteColumnButton = new System.Windows.Forms.Button();
             this.GetClickedCellButton = new System.Windows.Forms.Button();
             this.ApplyStyleButton = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
@@ -118,7 +119,7 @@ namespace Lab05_4.DataGridViewExample
             this.customersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customersBindingNavigator.Name = "customersBindingNavigator";
             this.customersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customersBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.customersBindingNavigator.Size = new System.Drawing.Size(800, 31);
             this.customersBindingNavigator.TabIndex = 0;
             this.customersBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -196,7 +197,7 @@ namespace Lab05_4.DataGridViewExample
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorDeleteItem
@@ -240,6 +241,7 @@ namespace Lab05_4.DataGridViewExample
             this.customersDataGridView.RowTemplate.Height = 24;
             this.customersDataGridView.Size = new System.Drawing.Size(800, 362);
             this.customersDataGridView.TabIndex = 1;
+            this.customersDataGridView.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.customersDataGridView_CellValidating);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -341,9 +343,9 @@ namespace Lab05_4.DataGridViewExample
             // 
             // DeleteColumnButton
             // 
-            this.DeleteColumnButton.Location = new System.Drawing.Point(122, 401);
+            this.DeleteColumnButton.Location = new System.Drawing.Point(12, 430);
             this.DeleteColumnButton.Name = "DeleteColumnButton";
-            this.DeleteColumnButton.Size = new System.Drawing.Size(109, 23);
+            this.DeleteColumnButton.Size = new System.Drawing.Size(104, 23);
             this.DeleteColumnButton.TabIndex = 3;
             this.DeleteColumnButton.Text = "Delete column";
             this.DeleteColumnButton.UseVisualStyleBackColor = true;
@@ -351,28 +353,40 @@ namespace Lab05_4.DataGridViewExample
             // 
             // GetClickedCellButton
             // 
-            this.GetClickedCellButton.Location = new System.Drawing.Point(238, 401);
+            this.GetClickedCellButton.Location = new System.Drawing.Point(122, 401);
             this.GetClickedCellButton.Name = "GetClickedCellButton";
             this.GetClickedCellButton.Size = new System.Drawing.Size(116, 23);
             this.GetClickedCellButton.TabIndex = 4;
             this.GetClickedCellButton.Text = "Get clicked cell";
             this.GetClickedCellButton.UseVisualStyleBackColor = true;
+            this.GetClickedCellButton.Click += new System.EventHandler(this.GetClickedCellButton_Click);
             // 
             // ApplyStyleButton
             // 
             this.ApplyStyleButton.AutoSize = true;
-            this.ApplyStyleButton.Location = new System.Drawing.Point(360, 403);
+            this.ApplyStyleButton.Location = new System.Drawing.Point(122, 432);
             this.ApplyStyleButton.Name = "ApplyStyleButton";
             this.ApplyStyleButton.Size = new System.Drawing.Size(98, 21);
             this.ApplyStyleButton.TabIndex = 5;
             this.ApplyStyleButton.Text = "Apply style";
             this.ApplyStyleButton.UseVisualStyleBackColor = true;
+            this.ApplyStyleButton.CheckedChanged += new System.EventHandler(this.ApplyStyleButton_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(244, 404);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "<current cell info>";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 440);
+            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ApplyStyleButton);
             this.Controls.Add(this.GetClickedCellButton);
             this.Controls.Add(this.DeleteColumnButton);
@@ -428,6 +442,7 @@ namespace Lab05_4.DataGridViewExample
         private System.Windows.Forms.Button DeleteColumnButton;
         private System.Windows.Forms.Button GetClickedCellButton;
         private System.Windows.Forms.CheckBox ApplyStyleButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
