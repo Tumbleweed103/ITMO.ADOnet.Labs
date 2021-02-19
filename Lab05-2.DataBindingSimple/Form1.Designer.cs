@@ -29,20 +29,84 @@ namespace Lab05_2.DataBindingSimple
         /// </summary>
         private void InitializeComponent()
         {
+            this.northwindDataSet1 = new Lab05_2.DataBindingSimple.NorthwindDataSet();
+            this.productsTableAdapter1 = new Lab05_2.DataBindingSimple.NorthwindDataSetTableAdapters.ProductsTableAdapter();
+            this.ProductIDTextBox = new System.Windows.Forms.TextBox();
+            this.ProductNameTextBox = new System.Windows.Forms.TextBox();
+            this.PreviousButton = new System.Windows.Forms.Button();
+            this.NextButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // northwindDataSet1
+            // 
+            this.northwindDataSet1.DataSetName = "NorthwindDataSet";
+            this.northwindDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productsTableAdapter1
+            // 
+            this.productsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ProductIDTextBox
+            // 
+            this.ProductIDTextBox.Location = new System.Drawing.Point(12, 12);
+            this.ProductIDTextBox.Name = "ProductIDTextBox";
+            this.ProductIDTextBox.Size = new System.Drawing.Size(110, 22);
+            this.ProductIDTextBox.TabIndex = 0;
+            // 
+            // ProductNameTextBox
+            // 
+            this.ProductNameTextBox.Location = new System.Drawing.Point(12, 49);
+            this.ProductNameTextBox.Name = "ProductNameTextBox";
+            this.ProductNameTextBox.Size = new System.Drawing.Size(267, 22);
+            this.ProductNameTextBox.TabIndex = 1;
+            // 
+            // PreviousButton
+            // 
+            this.PreviousButton.Location = new System.Drawing.Point(154, 87);
+            this.PreviousButton.Name = "PreviousButton";
+            this.PreviousButton.Size = new System.Drawing.Size(125, 23);
+            this.PreviousButton.TabIndex = 2;
+            this.PreviousButton.Text = "Previous";
+            this.PreviousButton.UseVisualStyleBackColor = true;
+            this.PreviousButton.Click += new System.EventHandler(this.PreviousButton_Click);
+            // 
+            // NextButton
+            // 
+            this.NextButton.Location = new System.Drawing.Point(12, 87);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(124, 23);
+            this.NextButton.TabIndex = 3;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(291, 129);
+            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.PreviousButton);
+            this.Controls.Add(this.ProductNameTextBox);
+            this.Controls.Add(this.ProductIDTextBox);
             this.Name = "Form1";
             this.Text = "DataBindingSimple";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private NorthwindDataSet northwindDataSet1;
+        private NorthwindDataSetTableAdapters.ProductsTableAdapter productsTableAdapter1;
+        private System.Windows.Forms.TextBox ProductIDTextBox;
+        private System.Windows.Forms.TextBox ProductNameTextBox;
+        private System.Windows.Forms.Button PreviousButton;
+        private System.Windows.Forms.Button NextButton;
     }
 }
 
