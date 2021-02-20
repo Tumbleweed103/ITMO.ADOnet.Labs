@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 namespace Lab08_1_2_LINQsql_1
 {
@@ -16,5 +18,7 @@ namespace Lab08_1_2_LINQsql_1
         {
             InitializeComponent();
         }
+
+        DataContext db;
     }
 }
