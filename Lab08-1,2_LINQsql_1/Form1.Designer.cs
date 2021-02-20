@@ -142,7 +142,7 @@ namespace Lab08_1_2_LINQsql_1
             this.Controls.Add(this.LoadDataButton);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "LINQsql_1";
             this.ResumeLayout(false);
 
         }
