@@ -3,51 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab01.DBConnection", "Lab01.DBConnection\Lab01.DBConnection.csproj", "{A51C547D-E288-4E75-B630-59B39A4EC413}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab01_DBConnection", "Lab01_DBConnection\Lab01_DBConnection.csproj", "{A51C547D-E288-4E75-B630-59B39A4EC413}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab01", "Lab01", "{5C5774DC-0D7E-4F30-B6F7-434ED7F247D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab02", "Lab02", "{C46164B8-1F37-461A-B609-812E0FB62FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.DBConnection", "Lab02.DBConnection\Lab02.DBConnection.csproj", "{B9591AD2-B1E5-4FA5-B90D-63C6C9A4AF40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_DBConnection", "Lab02_DBConnection\Lab02_DBConnection.csproj", "{B9591AD2-B1E5-4FA5-B90D-63C6C9A4AF40}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab03", "Lab03", "{6C509D59-84C4-4E91-B988-587134B0BF14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03.DBCommand", "Lab03.DBCommand\Lab03.DBCommand.csproj", "{25928BCD-B478-4D83-9C02-7FD8AA62C4AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_DBCommand", "Lab03_DBCommand\Lab03_DBCommand.csproj", "{25928BCD-B478-4D83-9C02-7FD8AA62C4AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab04", "Lab04", "{B3B281ED-DBB1-4E7E-991E-752B8C2022A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-1.DatasetDesigner", "Lab04-1.DatasetDesigner\Lab04-1.DatasetDesigner.csproj", "{35A28FBB-635D-47D0-89A7-F42F78BB0C56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-1_DatasetDesigner", "Lab04-1_DatasetDesigner\Lab04-1_DatasetDesigner.csproj", "{35A28FBB-635D-47D0-89A7-F42F78BB0C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-2.CreatingDataTable", "Lab04-2.CreatingDataTable\Lab04-2.CreatingDataTable.csproj", "{12D9EB1F-8558-4CC1-804E-8AF81BBA742D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-2_CreatingDataTable", "Lab04-2_CreatingDataTable\Lab04-2_CreatingDataTable.csproj", "{12D9EB1F-8558-4CC1-804E-8AF81BBA742D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-3.DataAdapterProgram", "Lab04-3.DataAdapterProgram\Lab04-3.DataAdapterProgram.csproj", "{50DF7798-67FD-40D6-AB68-B29C6174927D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-3_DataAdapterProgram", "Lab04-3_DataAdapterProgram\Lab04-3_DataAdapterProgram.csproj", "{50DF7798-67FD-40D6-AB68-B29C6174927D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-4.DataAdapterWizard", "Lab04-4.DataAdapterWizard\Lab04-4.DataAdapterWizard.csproj", "{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-4_DataAdapterWizard", "Lab04-4_DataAdapterWizard\Lab04-4_DataAdapterWizard.csproj", "{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-5.WorkingDataTable", "Lab04-5.WorkingDataTable\Lab04-5.WorkingDataTable.csproj", "{99D559E2-8C25-42E2-9200-D246A4C36DDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-5_WorkingDataTable", "Lab04-5_WorkingDataTable\Lab04-5_WorkingDataTable.csproj", "{99D559E2-8C25-42E2-9200-D246A4C36DDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-6.DataViewExample", "Lab04-6.DataViewExample\Lab04-6.DataViewExample.csproj", "{0427B360-1229-4E33-96FD-8D80EBBEFC59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-6_DataViewExample", "Lab04-6_DataViewExample\Lab04-6_DataViewExample.csproj", "{0427B360-1229-4E33-96FD-8D80EBBEFC59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab05", "Lab05", "{480A514F-DB09-4EE2-90F4-434636D73481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-1.DataSourcesWizard", "Lab05-1.DataSourcesWizard\Lab05-1.DataSourcesWizard.csproj", "{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-1_DataSourcesWizard", "Lab05-1_DataSourcesWizard\Lab05-1_DataSourcesWizard.csproj", "{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-2.DataBindingSimple", "Lab05-2.DataBindingSimple\Lab05-2.DataBindingSimple.csproj", "{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-2_DataBindingSimple", "Lab05-2_DataBindingSimple\Lab05-2_DataBindingSimple.csproj", "{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-3.DataBindingComplex", "Lab05-3.DataBindingComplex\Lab05-3.DataBindingComplex.csproj", "{BB3B7C63-B83D-416B-B86A-59EC5B1F1BC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-3_DataBindingComplex", "Lab05-3_DataBindingComplex\Lab05-3_DataBindingComplex.csproj", "{BB3B7C63-B83D-416B-B86A-59EC5B1F1BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-4.DataGridViewExample", "Lab05-4.DataGridViewExample\Lab05-4.DataGridViewExample.csproj", "{4ED1897E-8887-4259-BE2C-0B6256DA6FE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-4_DataGridViewExample", "Lab05-4_DataGridViewExample\Lab05-4_DataGridViewExample.csproj", "{4ED1897E-8887-4259-BE2C-0B6256DA6FE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab06", "Lab06", "{8E22C413-C5DA-4929-B9C0-580D2F864566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06-1.SavingDataSetXml", "Lab06-1.SavingDataSetXml\Lab06-1.SavingDataSetXml.csproj", "{65684957-C341-4069-A6E9-EA232BFFDB59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06-1_SavingDataSetXml", "Lab06-1_SavingDataSetXml\Lab06-1_SavingDataSetXml.csproj", "{65684957-C341-4069-A6E9-EA232BFFDB59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06-2.LoadDataSetXml", "Lab06-2.LoadDataSetXml\Lab06-2.LoadDataSetXml.csproj", "{681AE582-6C04-4141-8D25-88069C52E2CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06-2_LoadDataSetXml", "Lab06-2_LoadDataSetXml\Lab06-2_LoadDataSetXml.csproj", "{681AE582-6C04-4141-8D25-88069C52E2CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab07", "Lab07", "{75044FD8-4551-4E65-BBDE-B473DBCAC44F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07.Linq_Student", "Lab07.Linq_Student\Lab07.Linq_Student.csproj", "{6D858175-512B-40C8-B075-A151643C9DEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07_Linq_Student", "Lab07_Linq_Student\Lab07_Linq_Student.csproj", "{6D858175-512B-40C8-B075-A151643C9DEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab08", "Lab08", "{82CFE990-B66C-4B6E-9095-DBD0854A2F89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08-1,2_LINQsql_1", "Lab08-1,2_LINQsql_1\Lab08-1,2_LINQsql_1.csproj", "{B27271E4-3A0B-424D-B064-EB7BA196E8BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +123,10 @@ Global
 		{6D858175-512B-40C8-B075-A151643C9DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D858175-512B-40C8-B075-A151643C9DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D858175-512B-40C8-B075-A151643C9DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27271E4-3A0B-424D-B064-EB7BA196E8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27271E4-3A0B-424D-B064-EB7BA196E8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27271E4-3A0B-424D-B064-EB7BA196E8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27271E4-3A0B-424D-B064-EB7BA196E8BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +148,7 @@ Global
 		{65684957-C341-4069-A6E9-EA232BFFDB59} = {8E22C413-C5DA-4929-B9C0-580D2F864566}
 		{681AE582-6C04-4141-8D25-88069C52E2CB} = {8E22C413-C5DA-4929-B9C0-580D2F864566}
 		{6D858175-512B-40C8-B075-A151643C9DEF} = {75044FD8-4551-4E65-BBDE-B473DBCAC44F}
+		{B27271E4-3A0B-424D-B064-EB7BA196E8BF} = {82CFE990-B66C-4B6E-9095-DBD0854A2F89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E3D96D4-25FD-4AFC-8AA4-FE05928F3BE7}
