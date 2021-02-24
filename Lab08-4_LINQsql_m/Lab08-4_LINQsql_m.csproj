@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1AEA772-8D8D-4415-A1BF-9863A588E815}</ProjectGuid>
+    <ProjectGuid>{3854E45A-D4BD-44F4-A9A0-A2AF03BFE4E9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab08_3_LINQsqlSproc</RootNamespace>
-    <AssemblyName>Lab08-3_LINQsqlSproc</AssemblyName>
+    <RootNamespace>Lab08_4_LINQsql_m</RootNamespace>
+    <AssemblyName>Lab08-4_LINQsql_m</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,7 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Northwind.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
