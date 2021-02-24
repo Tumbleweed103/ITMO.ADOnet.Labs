@@ -16,5 +16,15 @@ namespace Lab08_4_LINQsql_m
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var db = new DataClassesProcDataContext();
+            foreach (var r in db.Ten_Most_Expensive_Products())
+            {
+                ListViewItem item = listView1.Items.Add(r.TenMostExpensiveProducts.ToString());
+                item.SubItems.Add(r.UnitPrice.ToString());
+            }
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace Lab08_4_LINQsql_m
             this.button1.TabIndex = 0;
             this.button1.Text = "Десять лучших";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listView1
             // 
@@ -60,7 +61,7 @@ namespace Lab08_4_LINQsql_m
             // columnHeader1
             // 
             this.columnHeader1.Text = "Ten Most";
-            this.columnHeader1.Width = 182;
+            this.columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
