@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab09_1_CourseManager
+namespace Lab09_2_CustomerManager
 {
-    public partial class Form1 : Form
+    public partial class CustomerViewer : Form
     {
-        public Form1()
+        public CustomerViewer()
         {
             InitializeComponent();
         }

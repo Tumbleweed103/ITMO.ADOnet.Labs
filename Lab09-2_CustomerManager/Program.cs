@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab09_1_CourseManager
+namespace Lab09_2_CustomerManager
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Lab09_1_CourseManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CourseViewer());
+            Application.Run(new CustomerViewer());
         }
     }
 }
