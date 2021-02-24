@@ -152,8 +152,9 @@ namespace Lab09_2_CustomerManager
             this.buttonFile.Name = "buttonFile";
             this.buttonFile.Size = new System.Drawing.Size(127, 38);
             this.buttonFile.TabIndex = 11;
-            this.buttonFile.Text = "Добавить фото";
+            this.buttonFile.Text = "Выберите файл";
             this.buttonFile.UseVisualStyleBackColor = true;
+            this.buttonFile.Click += new System.EventHandler(this.buttonFile_Click);
             // 
             // buttonAdd
             // 
@@ -163,6 +164,7 @@ namespace Lab09_2_CustomerManager
             this.buttonAdd.TabIndex = 12;
             this.buttonAdd.Text = "Добавить данные";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonOut
             // 
@@ -172,6 +174,7 @@ namespace Lab09_2_CustomerManager
             this.buttonOut.TabIndex = 13;
             this.buttonOut.Text = "Показать данные";
             this.buttonOut.UseVisualStyleBackColor = true;
+            this.buttonOut.Click += new System.EventHandler(this.buttonOut_Click);
             // 
             // buttonEdit
             // 

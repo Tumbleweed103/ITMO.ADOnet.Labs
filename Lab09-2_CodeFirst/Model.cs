@@ -11,6 +11,7 @@ namespace Lab09_2_CodeFirst
     {
         public int CustomerId { get; set; }
         public string Name { get; set; }
+        //public string LastName { get; set; }
         public string Email { get; set; }
         public int Age { get; set; }
         public byte[] Photo { get; set; }
