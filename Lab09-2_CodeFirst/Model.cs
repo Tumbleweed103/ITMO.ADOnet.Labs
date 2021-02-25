@@ -4,21 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lab09_2_CodeFirst
 {
     public class Customer
     {
         public int CustomerId { get; set; }
-        public string Name { get; set; }
-        //public string LastName { get; set; }
+        [Required]
+        [MaxLength(30)]
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        [MaxLength(100)]
         public string Email { get; set; }
+        [Range(8, 100)]
         public int Age { get; set; }
+        [Column(TypeName = "image")]
         public byte[] Photo { get; set; }
 
         public override string ToString()
         {
-            string s = Name + ", электронный адрес: " + Email;
+            string s = FirstName + " " + LastName + ", электронный адрес: " + Email;
             return s;
         }
 

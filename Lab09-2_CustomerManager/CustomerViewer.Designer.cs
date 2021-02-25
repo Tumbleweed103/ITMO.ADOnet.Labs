@@ -160,7 +160,7 @@ namespace Lab09_2_CustomerManager
             // 
             this.buttonAdd.Location = new System.Drawing.Point(389, 10);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(137, 59);
+            this.buttonAdd.Size = new System.Drawing.Size(125, 59);
             this.buttonAdd.TabIndex = 12;
             this.buttonAdd.Text = "Добавить данные";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -168,9 +168,9 @@ namespace Lab09_2_CustomerManager
             // 
             // buttonOut
             // 
-            this.buttonOut.Location = new System.Drawing.Point(532, 10);
+            this.buttonOut.Location = new System.Drawing.Point(520, 12);
             this.buttonOut.Name = "buttonOut";
-            this.buttonOut.Size = new System.Drawing.Size(134, 58);
+            this.buttonOut.Size = new System.Drawing.Size(122, 58);
             this.buttonOut.TabIndex = 13;
             this.buttonOut.Text = "Показать данные";
             this.buttonOut.UseVisualStyleBackColor = true;
@@ -178,21 +178,23 @@ namespace Lab09_2_CustomerManager
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(672, 10);
+            this.buttonEdit.Location = new System.Drawing.Point(648, 10);
             this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(116, 27);
+            this.buttonEdit.Size = new System.Drawing.Size(140, 27);
             this.buttonEdit.TabIndex = 14;
             this.buttonEdit.Text = "Редактировать";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(672, 43);
+            this.buttonDelete.Location = new System.Drawing.Point(648, 43);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(116, 26);
+            this.buttonDelete.Size = new System.Drawing.Size(140, 26);
             this.buttonDelete.TabIndex = 15;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // customerRadioButton
             // 
@@ -242,6 +244,7 @@ namespace Lab09_2_CustomerManager
             this.GridView.RowTemplate.Height = 24;
             this.GridView.Size = new System.Drawing.Size(800, 284);
             this.GridView.TabIndex = 20;
+            this.GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_CellClick);
             // 
             // groupBox1
             // 
@@ -281,6 +284,7 @@ namespace Lab09_2_CustomerManager
             this.Controls.Add(this.groupBox1);
             this.Name = "CustomerViewer";
             this.Text = "Customer Viewer";
+            this.Load += new System.EventHandler(this.CustomerViewer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
