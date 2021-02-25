@@ -92,9 +92,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lab09.2-4_CodeFirst\Lab09.2-4_CodeFirst.csproj">
+    <ProjectReference Include="..\Lab09.2,3_CodeFirst\Lab09.2,3_CodeFirst.csproj">
       <Project>{dc0716ec-6dc0-4bed-9c0b-7e76dbc79366}</Project>
-      <Name>Lab09.2-4_CodeFirst</Name>
+      <Name>Lab09.2,3_CodeFirst</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

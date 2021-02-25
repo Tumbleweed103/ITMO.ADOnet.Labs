@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07_Linq_Student", "Lab07
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab08", "Lab08", "{82CFE990-B66C-4B6E-9095-DBD0854A2F89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.1-2_LINQsql_1", "Lab08.1-2_LINQsql_1\Lab08.1-2_LINQsql_1.csproj", "{B27271E4-3A0B-424D-B064-EB7BA196E8BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.1,2_LINQsql_1", "Lab08.1,2_LINQsql_1\Lab08.1,2_LINQsql_1.csproj", "{B27271E4-3A0B-424D-B064-EB7BA196E8BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.3_LINQsqlSproc", "Lab08.3_LINQsqlSproc\Lab08.3_LINQsqlSproc.csproj", "{E1AEA772-8D8D-4415-A1BF-9863A588E815}"
 EndProject
@@ -59,11 +59,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.4_LINQsql_m", "Lab08.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab09", "Lab09", "{7AD10163-1BCE-437D-8330-3E105F1C7DF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.1_CourseManager", "Lab09.1_CourseManager\Lab09.1_CourseManager.csproj", "{1B157478-0674-4DF4-879C-0B0E21B0951F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.1,4_CourseManager", "Lab09.1,4_CourseManager\Lab09.1,4_CourseManager.csproj", "{1B157478-0674-4DF4-879C-0B0E21B0951F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.2-4_CustomerManager", "Lab09.2-4_CustomerManager\Lab09.2-4_CustomerManager.csproj", "{9B0B3EC5-5E25-4753-A330-B6662A940D60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.2,3_CustomerManager", "Lab09.2,3_CustomerManager\Lab09.2,3_CustomerManager.csproj", "{9B0B3EC5-5E25-4753-A330-B6662A940D60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.2-4_CodeFirst", "Lab09.2-4_CodeFirst\Lab09.2-4_CodeFirst.csproj", "{DC0716EC-6DC0-4BED-9C0B-7E76DBC79366}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.2,3_CodeFirst", "Lab09.2,3_CodeFirst\Lab09.2,3_CodeFirst.csproj", "{DC0716EC-6DC0-4BED-9C0B-7E76DBC79366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
