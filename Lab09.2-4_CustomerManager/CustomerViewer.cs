@@ -71,6 +71,10 @@ namespace Lab09_2_CustomerManager
             {
                 GridView.DataSource = context.Orders.ToList();
             }
+            else if (vipOrderRadioButton.Checked == true)
+            {
+                GridView.DataSource = context.VipOrders.ToList();
+            }
         }
 
         private void buttonOut_Click(object sender, EventArgs e)
@@ -97,6 +101,14 @@ namespace Lab09_2_CustomerManager
                 Quantity = 22,
                 PurchaseDate = DateTime.Parse("10.01.2016")
             });
+            context.VipOrders.Add(new VipOrder
+            {
+                ProductName = "Авто",
+                Quantity = 101,
+                PurchaseDate = DateTime.Parse("10.01.2016"),
+                Status = "Высокий"
+            });
+
             context.SaveChanges();
             orderListBox.DataSource = context.Orders.ToList();
         }

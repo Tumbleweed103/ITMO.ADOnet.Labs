@@ -51,6 +51,7 @@ namespace Lab09_2_CustomerManager
             this.textBoxCustomer = new System.Windows.Forms.TextBox();
             this.GridView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.vipOrderRadioButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -248,6 +249,7 @@ namespace Lab09_2_CustomerManager
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.vipOrderRadioButton);
             this.groupBox1.Controls.Add(this.customerRadioButton);
             this.groupBox1.Controls.Add(this.orderRadioButton);
             this.groupBox1.Location = new System.Drawing.Point(389, 80);
@@ -256,6 +258,17 @@ namespace Lab09_2_CustomerManager
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Выбор данных";
+            // 
+            // vipOrderRadioButton
+            // 
+            this.vipOrderRadioButton.AutoSize = true;
+            this.vipOrderRadioButton.Location = new System.Drawing.Point(240, 26);
+            this.vipOrderRadioButton.Name = "vipOrderRadioButton";
+            this.vipOrderRadioButton.Size = new System.Drawing.Size(94, 21);
+            this.vipOrderRadioButton.TabIndex = 18;
+            this.vipOrderRadioButton.TabStop = true;
+            this.vipOrderRadioButton.Text = "Vip orders";
+            this.vipOrderRadioButton.UseVisualStyleBackColor = true;
             // 
             // CustomerViewer
             // 
@@ -317,6 +330,7 @@ namespace Lab09_2_CustomerManager
         private System.Windows.Forms.TextBox textBoxCustomer;
         private System.Windows.Forms.DataGridView GridView;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton vipOrderRadioButton;
     }
 }
 
