@@ -79,5 +79,11 @@ namespace Lab09_1_CourseManager
             Close();
             schoolContext.Dispose();
         }
+
+        private void viewOffices_Click(object sender, EventArgs e)
+        {
+            OfficeAssignment officeForm = new OfficeAssignment();
+            officeForm.Visible = true;
+        }
     }
 }
