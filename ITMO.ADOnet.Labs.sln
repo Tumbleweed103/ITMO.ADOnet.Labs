@@ -17,33 +17,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_DBCommand", "Lab03_DB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab04", "Lab04", "{B3B281ED-DBB1-4E7E-991E-752B8C2022A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-1_DatasetDesigner", "Lab04-1_DatasetDesigner\Lab04-1_DatasetDesigner.csproj", "{35A28FBB-635D-47D0-89A7-F42F78BB0C56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04.1_DatasetDesigner", "Lab04.1_DatasetDesigner\Lab04.1_DatasetDesigner.csproj", "{35A28FBB-635D-47D0-89A7-F42F78BB0C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-2_CreatingDataTable", "Lab04-2_CreatingDataTable\Lab04-2_CreatingDataTable.csproj", "{12D9EB1F-8558-4CC1-804E-8AF81BBA742D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04.2_CreatingDataTable", "Lab04.2_CreatingDataTable\Lab04.2_CreatingDataTable.csproj", "{12D9EB1F-8558-4CC1-804E-8AF81BBA742D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-3_DataAdapterProgram", "Lab04-3_DataAdapterProgram\Lab04-3_DataAdapterProgram.csproj", "{50DF7798-67FD-40D6-AB68-B29C6174927D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04.3_DataAdapterProgram", "Lab04.3_DataAdapterProgram\Lab04.3_DataAdapterProgram.csproj", "{50DF7798-67FD-40D6-AB68-B29C6174927D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-4_DataAdapterWizard", "Lab04-4_DataAdapterWizard\Lab04-4_DataAdapterWizard.csproj", "{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04.4_DataAdapterWizard", "Lab04.4_DataAdapterWizard\Lab04.4_DataAdapterWizard.csproj", "{A7BD5973-8F17-4CB2-9E3C-4B03E4D13704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-5_WorkingDataTable", "Lab04-5_WorkingDataTable\Lab04-5_WorkingDataTable.csproj", "{99D559E2-8C25-42E2-9200-D246A4C36DDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04.5_WorkingDataTable", "Lab04.5_WorkingDataTable\Lab04.5_WorkingDataTable.csproj", "{99D559E2-8C25-42E2-9200-D246A4C36DDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04-6_DataViewExample", "Lab04-6_DataViewExample\Lab04-6_DataViewExample.csproj", "{0427B360-1229-4E33-96FD-8D80EBBEFC59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04.6_DataViewExample", "Lab04.6_DataViewExample\Lab04.6_DataViewExample.csproj", "{0427B360-1229-4E33-96FD-8D80EBBEFC59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab05", "Lab05", "{480A514F-DB09-4EE2-90F4-434636D73481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-1_DataSourcesWizard", "Lab05-1_DataSourcesWizard\Lab05-1_DataSourcesWizard.csproj", "{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05.1_DataSourcesWizard", "Lab05.1_DataSourcesWizard\Lab05.1_DataSourcesWizard.csproj", "{20FB40D1-6F8C-4BB8-9D17-69EB6598F3D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-2_DataBindingSimple", "Lab05-2_DataBindingSimple\Lab05-2_DataBindingSimple.csproj", "{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05.2_DataBindingSimple", "Lab05.2_DataBindingSimple\Lab05.2_DataBindingSimple.csproj", "{D2CBA791-2E7B-42B3-9E8C-E688C1993C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-3_DataBindingComplex", "Lab05-3_DataBindingComplex\Lab05-3_DataBindingComplex.csproj", "{BB3B7C63-B83D-416B-B86A-59EC5B1F1BC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05.3_DataBindingComplex", "Lab05.3_DataBindingComplex\Lab05.3_DataBindingComplex.csproj", "{BB3B7C63-B83D-416B-B86A-59EC5B1F1BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05-4_DataGridViewExample", "Lab05-4_DataGridViewExample\Lab05-4_DataGridViewExample.csproj", "{4ED1897E-8887-4259-BE2C-0B6256DA6FE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05.4_DataGridViewExample", "Lab05.4_DataGridViewExample\Lab05.4_DataGridViewExample.csproj", "{4ED1897E-8887-4259-BE2C-0B6256DA6FE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab06", "Lab06", "{8E22C413-C5DA-4929-B9C0-580D2F864566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06-1_SavingDataSetXml", "Lab06-1_SavingDataSetXml\Lab06-1_SavingDataSetXml.csproj", "{65684957-C341-4069-A6E9-EA232BFFDB59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06.1_SavingDataSetXml", "Lab06.1_SavingDataSetXml\Lab06.1_SavingDataSetXml.csproj", "{65684957-C341-4069-A6E9-EA232BFFDB59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06-2_LoadDataSetXml", "Lab06-2_LoadDataSetXml\Lab06-2_LoadDataSetXml.csproj", "{681AE582-6C04-4141-8D25-88069C52E2CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06.2_LoadDataSetXml", "Lab06.2_LoadDataSetXml\Lab06.2_LoadDataSetXml.csproj", "{681AE582-6C04-4141-8D25-88069C52E2CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab07", "Lab07", "{75044FD8-4551-4E65-BBDE-B473DBCAC44F}"
 EndProject
@@ -51,19 +51,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07_Linq_Student", "Lab07
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab08", "Lab08", "{82CFE990-B66C-4B6E-9095-DBD0854A2F89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08-1,2_LINQsql_1", "Lab08-1,2_LINQsql_1\Lab08-1,2_LINQsql_1.csproj", "{B27271E4-3A0B-424D-B064-EB7BA196E8BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.1-2_LINQsql_1", "Lab08.1-2_LINQsql_1\Lab08.1-2_LINQsql_1.csproj", "{B27271E4-3A0B-424D-B064-EB7BA196E8BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08-3_LINQsqlSproc", "Lab08-3_LINQsqlSproc\Lab08-3_LINQsqlSproc.csproj", "{E1AEA772-8D8D-4415-A1BF-9863A588E815}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.3_LINQsqlSproc", "Lab08.3_LINQsqlSproc\Lab08.3_LINQsqlSproc.csproj", "{E1AEA772-8D8D-4415-A1BF-9863A588E815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08-4_LINQsql_m", "Lab08-4_LINQsql_m\Lab08-4_LINQsql_m.csproj", "{3854E45A-D4BD-44F4-A9A0-A2AF03BFE4E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab08.4_LINQsql_m", "Lab08.4_LINQsql_m\Lab08.4_LINQsql_m.csproj", "{3854E45A-D4BD-44F4-A9A0-A2AF03BFE4E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab09", "Lab09", "{7AD10163-1BCE-437D-8330-3E105F1C7DF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09-1_CourseManager", "Lab09-1_CourseManager\Lab09-1_CourseManager.csproj", "{1B157478-0674-4DF4-879C-0B0E21B0951F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.1_CourseManager", "Lab09.1_CourseManager\Lab09.1_CourseManager.csproj", "{1B157478-0674-4DF4-879C-0B0E21B0951F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09-2_CustomerManager", "Lab09-2_CustomerManager\Lab09-2_CustomerManager.csproj", "{9B0B3EC5-5E25-4753-A330-B6662A940D60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.2-4_CustomerManager", "Lab09.2-4_CustomerManager\Lab09.2-4_CustomerManager.csproj", "{9B0B3EC5-5E25-4753-A330-B6662A940D60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09-2_CodeFirst", "Lab09-2_CodeFirst\Lab09-2_CodeFirst.csproj", "{DC0716EC-6DC0-4BED-9C0B-7E76DBC79366}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09.2-4_CodeFirst", "Lab09.2-4_CodeFirst\Lab09.2-4_CodeFirst.csproj", "{DC0716EC-6DC0-4BED-9C0B-7E76DBC79366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
