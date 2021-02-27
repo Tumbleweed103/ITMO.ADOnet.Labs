@@ -13,7 +13,7 @@ namespace FinalTask01
         }
 
         static string connectionString = ConfigurationManager.ConnectionStrings["AdventureWorks"].ToString();
-        private SqlConnection connection;
+        static SqlConnection connection;
 
         private void fillListViewButton_Click(object sender, EventArgs e)
         {
@@ -41,7 +41,7 @@ namespace FinalTask01
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Ошибка!", MessageBoxButtons.OK);
+                    MessageBox.Show(ex.Message, "Ошибка!");
                 }
             }
         }
