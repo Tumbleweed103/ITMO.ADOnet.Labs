@@ -49,6 +49,9 @@ namespace FinalTask02
             try
             {
                 DataRow newRow = productsDataSet.Tables["Product"].NewRow();
+                Object[] newRecord = { idTextBox.Text, nameTextBox.Text, numberTextBox.Text };
+                newRow.ItemArray = newRecord;
+                productsDataSet.Tables["Product"].Rows.Add(newRow);
                 MessageBox.Show("Новая строка добавлена!");
             }
             catch (Exception ex)
