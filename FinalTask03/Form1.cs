@@ -16,7 +16,6 @@ namespace FinalTask3
         public Form1()
         {
             InitializeComponent();
-            customerGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
 
         private CustomerEntities customerContext;
@@ -41,6 +40,7 @@ namespace FinalTask3
             try
             {
                 customerGridView.DataSource = new BindingList<CustomerOutput>(customers.ToList());
+                customerGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             }
             catch (Exception ex)
             {
